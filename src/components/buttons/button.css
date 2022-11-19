@@ -1,0 +1,12 @@
+button{
+    border: 1px solid #B8B7B8;
+    padding: 20px 0;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button:hover{
+    filter: brightness(0.9);
+    transition: all 0.4s;
+}

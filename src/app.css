@@ -1,0 +1,20 @@
+.mainStyle{
+    background: linear-gradient(180deg, rgba(79,94,108,1) 0%, rgba(49,52,78,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorBody{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
