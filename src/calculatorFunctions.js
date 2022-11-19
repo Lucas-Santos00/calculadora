@@ -17,11 +17,12 @@ let isValidToAddOperator = (mathExpression, newOperator)=>{
     let isValid = true
     //---
     
+    //Verificar se o ultimo valor já é um operador
+    isDiferente(mathOperators, lastCaracter) ? isValid = true : isValid = false
+    
     if(mathExpression == ''){
         isValid = false
     }
-    //Verificar se o ultimo valor já é um operador
-    isDiferente(mathOperators, lastCaracter) ? isValid = true : isValid = false
 
     //Invalidar 0.0.0 
     if(newOperator == '.'){
@@ -47,7 +48,6 @@ let isValidToAddOperator = (mathExpression, newOperator)=>{
 
     }
 
-    // console.log(isValid)
     return isValid
 
 }
