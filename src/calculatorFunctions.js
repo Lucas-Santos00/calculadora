@@ -1,6 +1,3 @@
-let equacaoInvalida = '0.0000+5'
-let equacaoValida = '5+6+7+8+'
-
 let isDiferente = (arr, value) =>{
     let isDiferente = true
 
@@ -19,7 +16,10 @@ let isValidToAddOperator = (mathExpression, newOperator)=>{
     const lastCaracter = expressionToArray[expressionToArray.length - 1]
     let isValid = true
     //---
-
+    
+    if(mathExpression == ''){
+        isValid = false
+    }
     //Verificar se o ultimo valor já é um operador
     isDiferente(mathOperators, lastCaracter) ? isValid = true : isValid = false
 
@@ -51,13 +51,4 @@ let isValidToAddOperator = (mathExpression, newOperator)=>{
     return isValid
 
 }
-
-// isValidToAddOperator(equacaoInvalida, '.')
-
 export {isValidToAddOperator}
-
-/*
-TODO: [X] Verificar se o ultimo valor ja é um operador.
-TODO: [X] Invalidar '5.5.5'
-
-*/
